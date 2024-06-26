@@ -1,0 +1,228 @@
+.header__principal{
+  display:flex;
+  padding: 16px;
+  background-color: var(--gray-1);
+  justify-content: space-around;
+  border-bottom: 1px solid var(--brand-1);
+  position: fixed;
+  width: 100%;
+}
+
+.main__block-primary{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 250px 236px;
+  gap:44px;
+  text-align: center;
+}
+
+.main__block-secondary{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 82px 236px;
+  justify-content: space-around;
+  background-color: var(--gray-1);
+  color: var(--gray-5);
+  gap:56px;
+}
+
+.main__block-tertiary{
+  display: flex;
+  gap:56px;
+  padding: 82px 236px;
+}
+.main__block-tertiary-item-2{
+  display:flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.main__block-quaternary{
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 82px 236px;
+  gap: 56px;
+  align-items: flex-start;
+}
+.main__block-quaternary-container-1{
+  display: flex;
+  padding: 0 0 0 86.4px;
+}
+.main__block-quaternary-item-1{
+  display: flex;
+  flex-direction: column;
+  padding: 80px 52px;
+}
+.main__block-quaternary-item-2{
+  display: flex;
+  flex-direction: column;
+  gap: 82px;
+}
+.main__block-quaternary-item-2 li p{
+  box-sizing: border-box;
+  width: 412px;
+}
+.main__block-quaternary-item-2 li{
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.main__block-quaternary-item-2 li div{
+  display: flex;
+  flex-direction:column;
+  box-sizing: border-box;
+  width: 192px;
+  gap:8px;
+}
+
+footer{
+  display: flex;
+  background-color: var(--gray-1);
+  padding: 50px 775px;
+  gap: 10px;
+}
+
+
+
+
+
+.header__principal button{
+  border-color: var(--gray-7);
+  background-color: var(--gray-1);
+  color: var(--gray-7);
+  font-size: clamp(0.563rem, 0.074rem + 1.029vw, 1rem);
+  padding: 20px 32px;
+}
+
+
+
+.main__block-primary p{
+  text-align: center;
+  color: var(--gray-6);
+  font-size: clamp(0.563rem, -2.424rem + 3.804vw, 1rem);
+}
+.main__block-primary h1{
+  font-weight:600;
+  font-size: clamp(2rem, 0.603rem + 2.941vw, 3.25rem);
+  line-height: 140%
+}
+.main__block-primary h1 span{
+  font-weight:600;
+  font-size: clamp(2rem, 0.603rem + 2.941vw, 3.25rem);
+  line-height: 140%;
+  color: var(--brand-1)
+}
+.main__block-primary button{
+  background-color: var(--brand-1);
+  border: none;
+  color: var(--gray-7);
+  padding: 20px 32px;
+  font-size: clamp(0.563rem, 0.074rem + 1.029vw, 1rem);
+}
+
+
+
+
+.main__block-secondary h2{
+  font-weight: 600;
+  font-size: clamp(1.75rem, 0.912rem + 1.765vw, 2.5rem);
+  line-height: 64px;
+  color: var(--gray-6);
+}
+.main__block-secondary p{
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: clamp(0.563rem, -2.424rem + 3.804vw, 1rem);
+  color: var(--gray-5);
+  line-height: 30px;
+  width: 580px;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+
+
+
+.main__block-tertiary-item-1 h2{
+  font-size: 40px;
+  color: var(--gray-6);
+  font-weight: 600;
+  line-height: 64px;
+}
+.main__block-tertiary-item-1 p{
+  font-size: 20px;
+  color: var(--gray-4);
+  text-align: justify;
+}
+.main__block-tertiary-item-1{
+  display:flex;
+  flex-direction: column;
+  gap: 33px;
+  align-items: flex-start;
+}
+.main__block-tertiary-container button{
+  background-color: var(--brand-1);
+  border: none;
+  color: var(--gray-7);
+  padding: 20px 32px;
+}
+
+
+
+
+.main__block-tertiary-item-2 h3{
+  text-align: center;
+  font-size: 32px;
+  color: var(--gray-6);
+  font-weight: 600;
+  line-height: 51.2px;
+  margin: 0 0 30px 0;
+}
+.main__block-tertiary-item-2 p{
+  font-size: 20px;
+  color: var(--gray-4);
+  text-align: justify;
+  line-height: 30px;
+  box-sizing: border-box;
+  width: 583px;
+}
+
+
+
+
+.main__block-quaternary-item-1 h2{
+  text-align: justify;
+  color: var(--gray-7);
+  font-size: 20px;
+}
+.main__block-quaternary-item-1 h2{
+  font-size: 32px;
+  color: var(--gray-6);
+  font-weight: 600;
+  line-height: 51.2px;
+}
+.main__block-quaternary-item-1{
+  background-color: var(--brand-1);
+  gap: 35px;
+}
+.main__block-quaternary-item-2 h3{
+  font-size: 32px;
+  color: var(--gray-6);
+  font-weight: 600;
+  line-height: 51.2px;
+}
+.main__block-quaternary-item-2 li div p{
+  font-size: 16px;
+  color: var(--gray-4)
+}
+
+
+
+
+foother img{
+  width: 178.42px;
+  color: var(--gray-6);
+}
