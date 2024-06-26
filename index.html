@@ -3,24 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style/reset.css">
+    <link rel="stylesheet" href="/src/style/index.css">
+    <link rel="stylesheet" href="/src/style/globalStyles.css">
     <title>Página Institucional Genérica</title>
   </head>
   <body>
     <!-- ====== Header ====== -->
     <header>
-      <div>
-        <img src="" alt="" />
+      <div class="header__principal">
+        <img src="/src/assets/logo.svg" alt="logo" />
         <button>Entrar para próxima turma</button>
       </div>
     </header>
     <main>
       <!-- ====== Section Banner ====== -->
       <section>
-        <div>
+        <div class="main__block-primary">
           <h1>Desenvolvendo <span>suas</span> próximas habilidades</h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
+            industry. <br> Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s
           </p>
           <button>Sobre nós</button>
@@ -29,13 +32,13 @@
 
       <!-- ====== Section About ====== -->
       <section>
-        <div>
-          <h2>Quem somos nós?</h2>
+        <div class="main__block-secondary">
+          <h2 id="quemSomos">Quem somos nós?</h2>
           <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using.
+            It is a long established fact that a reader will be distracted by <br>
+            the readable content of a page when looking at its layout. The point <br>
+            of using Lorem Ipsum is that it has a more-or-less normal <br>
+            distribution of letters, as opposed to using. <br>
           </p>
         </div>
       </section>
@@ -44,7 +47,7 @@
       <section>
         <div>
           <!-- LEFT SIDE -->
-          <div>
+          <div class="box__main-tertiary">
             <div>
               <h2>Dúvidas frequentes</h2>
               <p>
