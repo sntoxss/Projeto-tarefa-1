@@ -13,7 +13,7 @@
     <header>
       <div class="header__principal">
         <img src="/src/assets/logo.svg" alt="logo" />
-        <button>Entrar para próxima turma</button>
+        <button id="showMensageHeader">Entrar para próxima turma</button>
       </div>
     </header>
     <main>
@@ -26,7 +26,7 @@
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s
           </p>
-          <button><a href="#quemSomos">Sobre nós</a></button>
+          <a href="#quemSomos"><button>Sobre nós</button></a>
           <span id="quemSomos"></span>
         </div>
       </section>
@@ -56,7 +56,7 @@
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s
               </p>
-              <button>Entrar para próxima turma</button>
+              <button id="showMensage">Entrar para próxima turma</button>
             </div>
           </div>
           <!-- RIGHT SIDE -->
@@ -197,6 +197,28 @@
     </footer>
 
     <!-- ====== Modal ====== -->
-    <dialog></dialog>
+    <dialog id="modalController">
+      <div class="modal__container">
+        <ul>
+          <li>
+            <div class="modal__block-cadastro">
+              <h1>Cadastro</h1>
+              <button id="closeModal"> X </button>
+            </div>
+          </li>
+          <li>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          </li>
+          <li>
+          <input type="email" placeholder="Digitar email">
+          </li>
+          <li>
+            <button type="submit">Entrar na lista para próxima turma</button>
+          </li>
+        </ul>
+      </div>
+    </dialog>
+
+    <script src="/src/script/index.js"></script>
   </body>
 </html>
