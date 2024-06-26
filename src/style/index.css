@@ -6,6 +6,7 @@
   border-bottom: 1px solid var(--brand-1);
   position: fixed;
   width: 100%;
+  z-index: 5;
 }
 
 .main__block-primary{
@@ -33,6 +34,11 @@
   gap:56px;
   padding: 82px 236px;
 }
+.main__block-tertiary-item-1{
+  position: sticky;
+  z-index: 0;
+  top:163px;
+}
 .main__block-tertiary-item-2{
   display:flex;
   flex-direction: column;
@@ -50,11 +56,15 @@
 .main__block-quaternary-container-1{
   display: flex;
   padding: 0 0 0 86.4px;
+  position: sticky;
+  top: 163px;
+  z-index: 5;
 }
 .main__block-quaternary-item-1{
   display: flex;
   flex-direction: column;
   padding: 80px 52px;
+  
 }
 .main__block-quaternary-item-2{
   display: flex;
