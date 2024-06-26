@@ -103,6 +103,8 @@ footer{
   text-align: center;
   color: var(--gray-6);
   font-size: clamp(0.563rem, -2.424rem + 3.804vw, 1rem);
+  box-sizing: border-box;
+  width: 770px;
 }
 .main__block-primary h1{
   font-weight:600;
