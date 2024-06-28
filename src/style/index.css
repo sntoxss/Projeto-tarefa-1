@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 250px 236px;
+  padding: 250px clamp(2.625rem, 1.357rem + 0.714vw, 2rem);
   gap:44px;
   text-align: center;
 }
@@ -22,24 +22,29 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding: 82px 236px;
+  padding: 82px clamp(2.313rem, -31.764rem + 51.683vw, 14.75rem);
   justify-content: space-around;
   background-color: var(--gray-1);
   color: var(--gray-5);
   gap:56px;
+  box-sizing: border-box;
+  width: clamp(62.875rem, -42.048rem + 163.942vw, 105.5rem);
 }
 
 .main__block-tertiary{
   display: flex;
   gap:56px;
-  padding: 82px 236px;
+  padding: 82px clamp(2.313rem, -31.764rem + 51.683vw, 14.75rem);
+
 }
 .main__block-tertiary-item-1{
   position: sticky;
   z-index: 0;
   top:163px;
+  width: clamp(20rem, -26.154rem + 72.115vw, 38.75rem);
 }
 .main__block-tertiary-item-2{
+  width: 583px;
   display:flex;
   flex-direction: column;
   gap: 60px;
@@ -49,7 +54,7 @@
 .main__block-quaternary{
   display: flex;
   flex-direction: row-reverse;
-  padding: 82px 236px;
+  padding: 82px clamp(2.313rem, -31.764rem + 51.683vw, 14.75rem);
   gap: 56px;
   align-items: flex-start;
 }
@@ -57,8 +62,7 @@
   display: flex;
   padding: 0 0 0 86.4px;
   position: sticky;
-  top: 163px;
-  z-index: 5;
+  top: 117px;
 }
 .main__block-quaternary-item-1{
   display: flex;
@@ -70,6 +74,7 @@
   display: flex;
   flex-direction: column;
   gap: 82px;
+  width: 40%;
 }
 .main__block-quaternary-item-2 li p{
   box-sizing: border-box;
@@ -91,14 +96,15 @@
 footer{
   display: flex;
   background-color: var(--gray-1);
-  padding: 50px 775px;
+  padding: 50px;
   gap: 10px;
+  justify-content: center;
 }
 
 dialog{
   padding: inherit;
   width: 504px;
-  height: 416px;
+  height: 425px;
   border: 2px solid var(--brand-1);
   margin: 151px auto;
   background-color: var(--gray-2);
@@ -114,9 +120,6 @@ dialog{
   padding: 40px 28px;
   width: 448px;
 }
-ul{
-  width: 448px;
-}
 dialog::backdrop{
   background-color: rgb(33, 37, 41, 0.8);
 }
@@ -130,12 +133,14 @@ dialog::backdrop{
 
 
 
+
+
 .header__principal button{
   border-color: var(--gray-7);
   background-color: var(--gray-1);
   color: var(--gray-7);
-  font-size: clamp(0.563rem, 0.074rem + 1.029vw, 1rem);
-  padding: 20px 32px;
+  font-size: clamp(0.7rem, 0.486rem + 0.571vw, 1rem);
+  padding: 20px clamp(2.625rem, 1.357rem + 0.714vw, 2rem);
 }
 
 
@@ -143,18 +148,16 @@ dialog::backdrop{
 .main__block-primary p{
   text-align: center;
   color: var(--gray-6);
-  font-size: clamp(0.563rem, -2.424rem + 3.804vw, 1rem);
-  box-sizing: border-box;
-  width: 770px;
+  font-size: clamp(1.2rem, -2.424rem + 3.804vw, 1rem);
 }
 .main__block-primary h1{
   font-weight:600;
-  font-size: clamp(2rem, 0.603rem + 2.941vw, 3.25rem);
+  font-size: clamp(3rem, 2.429rem + 1.19vw, 3.5rem);
   line-height: 140%
 }
 .main__block-primary h1 span{
   font-weight:600;
-  font-size: clamp(2rem, 0.603rem + 2.941vw, 3.25rem);
+  font-size: clamp(3rem, 2.429rem + 1.19vw, 3.5rem);
   line-height: 140%;
   color: var(--brand-1)
 }
@@ -163,7 +166,7 @@ dialog::backdrop{
   border: none;
   color: var(--gray-7);
   padding: 20px 32px;
-  font-size: clamp(0.563rem, 0.074rem + 1.029vw, 1rem);
+  font-size: clamp(1rem, 0.486rem + 0.571vw, 1rem);
 }
 
 
@@ -171,17 +174,17 @@ dialog::backdrop{
 
 .main__block-secondary h2{
   font-weight: 600;
-  font-size: clamp(1.75rem, 0.912rem + 1.765vw, 2.5rem);
+  font-size: clamp(2rem, 1.643rem + 0.952vw, 2.5rem);
   line-height: 64px;
   color: var(--gray-6);
 }
 .main__block-secondary p{
   box-sizing: border-box;
   display: inline-block;
-  font-size: clamp(0.563rem, -2.424rem + 3.804vw, 1rem);
+  font-size: clamp(1rem, 0.486rem + 0.571vw, 1rem);
   color: var(--gray-5);
   line-height: 30px;
-  width: 533px;
+  width: 528px;
   text-align: justify;
   margin: 0 auto;
 }
@@ -190,23 +193,22 @@ dialog::backdrop{
 
 
 .main__block-tertiary-item-1 h2{
-  font-size: 40px;
+  font-size: clamp(1.8rem, 1.429rem + 1.19vw, 2.5rem);
   color: var(--gray-6);
   font-weight: 600;
   line-height: 64px;
 }
 .main__block-tertiary-item-1 p{
-  font-size: 20px;
+  font-size: clamp(1rem, 0.58rem + 0.744vw, 1.25rem);
   color: var(--gray-4);
   text-align: justify;
-   box-sizing: border-box;
-  width: 533px; 
 }
 .main__block-tertiary-item-1{
   display:flex;
   flex-direction: column;
   gap: 33px;
-  align-items: flex-start;
+  align-items: flex-start; 
+  justify-content: space-between;
 }
 .main__block-tertiary-container button{
   background-color: var(--brand-1);
@@ -220,19 +222,20 @@ dialog::backdrop{
 
 .main__block-tertiary-item-2 h3{
   text-align: center;
-  font-size: 32px;
+  font-size: clamp(1.4rem, 0.58rem + 0.744vw, 1.25rem);
   color: var(--gray-6);
   font-weight: 600;
   line-height: 51.2px;
   margin: 0 0 30px 0;
 }
+
 .main__block-tertiary-item-2 p{
-  font-size: 20px;
+  font-size: clamp(1rem, 0.58rem + 0.744vw, 1.25rem);
   color: var(--gray-4);
   text-align: justify;
   line-height: 30px;
   box-sizing: border-box;
-  width: 583px;
+
 }
 
 
@@ -290,27 +293,165 @@ foother img{
   font-weight: 600;
   line-height: 51.2px;
 }
-ul li input{
+form ul li input{
   background-color: var(--gray-1);
   border: none;
   padding: 14px 20px;
-  width: 448px;
+  width: 100%;
   height: 60px;
   box-sizing: border-box;
   font-size: 20px;
+  color: var(--gray-5);
 }
-ul li p{
+form ul li p{
   font-size: 16px;
   color: var(--gray-4);
   line-height: 24px;
 }
-ul li button{
+form ul li button{
   box-sizing: border-box;
-  width: 448px;
+  width: 100%;
   height: 60px;
   background-color: var(--brand-1);
   border: none;
   color: var(--gray-7);
   padding: 0 32px;
+  
+}
+
+
+
+.header__principal button:hover{
+  background-color: var(--brand-1);
+  transition: 1s ease;
+}
+.main__block-primary button:hover{
+  background-color: var(--brand-2);
+  border: 1px solid var(--gray-7);
+  transition: 1s ease;
+}
+.main__block-tertiary-item-1 button:hover{
+  background-color: var(--brand-2);
+  border: 1px solid var(--gray-7);
+  transition: 1s ease;
+}
+.main__block-quaternary-item-1:hover{
+  background-color: var(--brand-2);
+  border: 1px solid var(--gray-7);
+  transition: 1s ease;
+}
+
+.modal__block-cadastro button:hover{
+  background-color: brown;
+  transition: 1s ease;
+}
+.submit button:hover{
+  background-color: #2a3d99;
+  transition: 1s ease;
+}
+
+
+
+
+
+@media(max-width: 1024px){
+
+  .main__block-secondary p{
+  width: clamp(14.375rem, -41.5rem + 116.406vw, 33rem);
+  margin: 0;
+  width: 100%;
+}
+
+.main__block-secondary{
+  width: clamp(19.813rem, -0.25rem + 98.047vw, 62.5rem);
+  flex-direction: column;
+  align-items: center;
+  
+  }
+
+
+  .main__block-tertiary{
+    flex-wrap: wrap;
+  }
+  .main__block-tertiary-item-1 h2{
+    text-align: center;
+  }
+  .main__block-tertiary-item-1{
+    align-items: normal;
+    width: 100%;
+  }
+  .main__block-tertiary-item-2{
+    width: 100%;
+  }
+
+  .main__block-quaternary{
+    flex-direction: column;
+  }
+  .main__block-quaternary-container-1{
+    padding: 0;
+  }
+  .main__block-quaternary-container-1{
+    position: static;
+
+  }
+  .main__block-quaternary-item-1 h2{
+  text-align: center;
+    
+  }
+  .main__block-quaternary-item-2 li div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+  }
+  .main__block-quaternary-item-2 li p{
+    box-sizing: content-box;
+    width: auto;
+  }
+  .main__block-quaternary-item-2 {
+    width: 100%;
+  }
+  .main__block-quaternary-item-2 li{
+    flex-direction: column;
+    width: 100%;
+  }
+  ul{
+    width: 100%;
+  }
+
+}
+
+@media(max-width: 560px){
+  .header__principal{
+    justify-content: center;
+  }
+  
+  .header__principal button{
+    display: none;
+    
+  }
+  .main__block-quaternary-item-2 h3 {
+    font-size: clamp(1.5rem, 1.5rem + 1.882vw, 1rem);
+    
+  }
+  
+.modal__container ul {
+      width: clamp(20.188rem, -4.227rem + 91.912vw, 28rem);
+}
+.modal__container {
+  width: auto;
+  padding: 26px 28px;
+}
+
+}
+@media(max-width: 425px){
+  .modal__container ul {
+        width: clamp(0rem, 0rem + 76vw, 20.188rem);
+        height: clamp(1.875rem, 1.875rem + -0.941vw, 1.625rem);
+  }
+  dialog{
+    width: min-content;
+    height: 440px;
+  }
   
 }
